@@ -23,4 +23,14 @@ python -m venv venv
 
 note que o último venv é referente ao nome que damos ao ambiente de desenvolvimento..fica livre a escolha do mesmo porém se adota venv como padrão.
 
+2. Ativando o ambiente de densenvolvimento no windows.
+venv/scripts/activate
+2. Ativando o ambiente de densenvolvimento no Linux.
+source venv/bin/activate
 
+Ao ser ativado o terminal ficaria com um (nome verde) e passara a usar tds as dependencias dentro do python do ambiente recem criado 
+
+Podemos inclusive verificar a versao do PIP instalado neste python do venv e atualiza-lo.
+
+pip --version
+python -m venv venv
