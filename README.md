@@ -67,27 +67,3 @@ A ideia é sempre que pegar um windows zerado logo executar esse comando para ev
 
 Conhecimento básicos que devemos saber para iniciar no python
 ver os notebooks
-
-### Strings e seus métodos
-
-É um tipo primitivo de dados.. um texto (conjunto de caracteres normalmente).
-
-Exemplo:
-
-```python
-texto = "Meu texto"
-```
-
-A variável ```texto``` recebeu a string Meu texto como atribuição.
-
-Podemos verificar o tipo com ```type()```
-
-```python
-type(texto)
-```
-
-O retorno será
-
-```python
-<class 'str'>
-```
