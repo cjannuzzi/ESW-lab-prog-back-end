@@ -1,3 +1,3 @@
-texto = "Meu texto"
+texto = "AULA CAIO"
 
-print(type(texto))
+print(texto[0])

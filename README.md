@@ -84,3 +84,24 @@ O retorno será
 ```python
 <class 'str'>
 ```
+
+### Outros exemplos
+Temos a seguir um exemplo mais prático
+<p align="center">
+<img src="../pycode_django/imgs_markdown/string1.png"></p>
+
+in:
+```python
+texto = "AULA CAIO"
+```
+
+in:
+```python
+texto [0]
+```
+
+out:
+```python
+A
+```
+Usando so indices podemos buscar as letras correspondentes.
