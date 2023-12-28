@@ -34,3 +34,15 @@ Podemos inclusive verificar a versao do PIP instalado neste python do venv e atu
 
 pip --version
 python -m venv venv
+
+# Política de execução Powershell [Windows]
+Um ponto importante para quem esta rodando no Windows, devemos alterar uma configuração do PowerShell para rodar ele de boa no VSCode.
+Usando o PowerShell temos maior controle sobre nosso PC e por padrão ele vem com algumas restrições de execução de scripts no PC, enfim, temos que corrigir isso. E sera da seguinte forma.
+Devemos abrir no PowerShell com privilégios de administrador e rodar algum desses comando a seguir. recomendo o 1 pois é geral mas vai depender da maneira como voce usa o PC onde esta executando este curso.
+
+1. Alteração de política global: Set-ExecutionPolicy Unrestricted
+ou
+2. Alteração de política por sessão: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+A ideia é sempre que pegar um windows zerado logo executar esse comando para evitar dores de cabeça futuras.
+
