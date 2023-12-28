@@ -1,5 +1,7 @@
-# pycode_django
-Curso do pycodebr
+# Django Master
+
+Destrinchando e planejando aula.
+
 ## Ambientação e instalação
 
 <strong> Instruções - windows</strong> <br>
