@@ -176,3 +176,9 @@ Devemos resolver isso no coração do nosso projeto... no app> arquivo <strong> 
 Por padrão, temos de fábrica os seguintes itens já pré configurados
 
 ![instaledapps1](./notebooks_nivelamento/imgs_markdown/instaledapps1.png)
+
+Devemos adicionar o app cars no settings.py nos INSTALLED_APPS
+
+![cars2](./notebooks_nivelamento/imgs_markdown/cars2.png)
+
+Feito isso, agora podemos explorar melhor nossos arquivos da nossa nova app.
