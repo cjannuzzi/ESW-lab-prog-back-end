@@ -154,4 +154,15 @@ Durante o andamento do nosso projeto carros teremos vários apps (não considera
 
 ![djangoapps](./notebooks_nivelamento/imgs_markdown/djangoapps.png)
 
-Queremos fazer um gerenciamento de carros...e vamos criar uma aplicação dentro do nosso projeto e dentro dele (o verde por exemplo) haverá toda a lógica de registro de carros, podemos também ter um app sobre vendedores de carros (amarelo por exemplo). Poderiamos colocar toda a nossa app dentro de um único projeto tudo misturado... poderiamos sim mas não seria uma prática. O ideial é todo app ter sua separação lógica e organizada
+Queremos fazer um gerenciamento de carros...e vamos criar uma aplicação dentro do nosso projeto e dentro dele (o verde por exemplo) haverá toda a lógica de registro de carros, podemos também ter um app sobre vendedores de carros (amarelo por exemplo). Poderiamos colocar toda a nossa app dentro de um único projeto tudo misturado... poderiamos sim mas não seria uma prática. O ideial é todo app ter sua separação lógica e organizada e isso facilita muito na manutenção do código em sí.
+<br>
+
+9. Criaremos agora nossa primeira app do django que sera nossa princial para gerenciar o cadastro de carros.
+<br>
+
+No terminal: `python manage.py startapp cars`
+
+Note que uma nova pasta agora aparece na raiz na pasta carros
+
+![cars](./notebooks_nivelamento/imgs_markdown/cars1.png)
+
