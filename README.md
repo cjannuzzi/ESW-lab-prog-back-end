@@ -71,3 +71,5 @@ ver os notebooks
 Começando com Django.
 
 1. Criando e Conhecendo o seu Projeto
+
+Mas qual é a ideia do projeto? Guardar registro de carros! Marca, modelo, ano e etc. É uma app simples e funcional.
