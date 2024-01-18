@@ -100,3 +100,37 @@ O retorno deve ser a versão instalada.
 Até o momento temos:
 * ambiente virtual criado e ativado
 * django instalado e verificado
+
+5. Quando instalamos o Django, ele cria alguns comando no CLI do django-admin para que possamos gerenciar nosso projeto
+
+O primeiro comando que podemos utilizar é... `django-admin startproject` + nome do app + .
+<br>
+
+O ponto é para indicar ao django em qual diretório vc quer q ele crie os arquivos iniciais do projeto e como já estamos na pasta carros pelo terminal.. o ponto indica ela.
+
+Então.. fica assim "django inicie o projeto de nome app na pasta raiz em que estou localizado"
+Por que app? Ela é o coração do projeto..se eu chamasse de carros seria ./carros/carros/ arquivos do django então poderia ficar confuso. Por questão de organização escolhi esse nome.
+<br>
+
+Ficando `django-admin startproject app .`
+<br>
+
+6. Perceberam que ao dar o startproject o djando criou o arquivo `manage.py`?
+
+Este arquivo chama uma série de comandos internos para rodar nossa aplicação django. 
+
+O próximo comando no terminal é o `python manage.py runserver`
+
+![manage_py_runserver](./notebooks_nivelamento/imgs_markdown/manage_py_runserver.png)
+
+No terminal haverá a seguinte mensagem
+
+![manage_py_runserver_status](./notebooks_nivelamento/imgs_markdown/manage_py_runserver_status.png)
+
+E ao clicarmos no `http://127.0.0.1:8000/`
+Seremos direcionados ao navegador e se tudo deu certo e o servidor startou..
+
+![teladjangodebug](./notebooks_nivelamento/imgs_markdown/teladjangodebug.png)
+
+A imagem acima é como se fosse um Hello world do django rs
+
