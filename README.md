@@ -149,3 +149,9 @@ Temos uma outra forma mais visual de ver isso também pelo terminal:
 
 ![manage_py_test2](./notebooks_nivelamento/imgs_markdown/manage_py_test2.png)
 
+8. Django apps
+Durante o andamento do nosso projeto carros teremos vários apps (não considera a app criada inicialmente pois ela é a pasta principal de configurações.. o coração do nosso projeto) e isso é uma grande vantagem do django. 
+
+![djangoapps](./notebooks_nivelamento/imgs_markdown/djangoapps.png)
+
+Queremos fazer um gerenciamento de carros...e vamos criar uma aplicação dentro do nosso projeto e dentro dele (o verde por exemplo) haverá toda a lógica de registro de carros, podemos também ter um app sobre vendedores de carros (amarelo por exemplo). Poderiamos colocar toda a nossa app dentro de um único projeto tudo misturado... poderiamos sim mas não seria uma prática. O ideial é todo app ter sua separação lógica e organizada
