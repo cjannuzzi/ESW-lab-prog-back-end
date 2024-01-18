@@ -86,3 +86,4 @@ Mas qual é a ideia do projeto? Guardar registro de carros! Marca, modelo, ano e
 <br>
 Para verificar se ativou... no seu terminal irá aparecer a imagem a seguir
 ![venv](./notebooks_nivelamento/imgs_markdown/venv_ativado.png)
+<br>
