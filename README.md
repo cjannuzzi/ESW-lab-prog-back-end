@@ -144,3 +144,5 @@ Mas como testar no django? Simples, podemos botar para rodar nossos testes da se
 
 Note que não retornou nenhum resultado pois não temos ainda nada configurado a respeito, porém foi feita a rotina de execução do próprio django.
 
+Temos uma outra forma mais visual de ver isso também pelo terminal:
+`python manage.py test`
