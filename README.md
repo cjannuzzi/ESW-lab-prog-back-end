@@ -76,6 +76,11 @@ Mas qual é a ideia do projeto? Guardar registro de carros! Marca, modelo, ano e
 <br> É uma app simples e funcional!
 
 1. Crie uma pasta com o nome do app;
+<br>
 2. Crie um ambiente virtual venv dentro da pasta;
-![Alt text](<notebooks - nivelamento/imgs_markdown/venv.png>)
-
+![venv](<notebooks - nivelamento/imgs_markdown/venv.png>)
+<br>
+3. Ative o ambiente criado
+![venv ativar](<notebooks - nivelamento/imgs_markdown/venv ativar.png>)
+Para verificar se ativou... no seu terminal irá aparecer a imagem a seguir
+![venv ativado](<notebooks - nivelamento/imgs_markdown/venv ativado.png>)
