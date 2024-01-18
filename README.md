@@ -74,3 +74,8 @@ Começando com Django.
 
 Mas qual é a ideia do projeto? Guardar registro de carros! Marca, modelo, ano e etc. 
 <br> É uma app simples e funcional!
+
+1. Crie uma pasta com o nome do app;
+2. Crie um ambiente virtual venv dentro da pasta;
+![Alt text](<notebooks - nivelamento/imgs_markdown/venv.png>)
+
