@@ -166,3 +166,13 @@ Note que uma nova pasta agora aparece na raiz na pasta carros
 
 ![cars](./notebooks_nivelamento/imgs_markdown/cars1.png)
 
+<strong>Informação importante</strong>
+
+Criamos a pasta app cars porém ainda não estamos dizendo ao django para a usarmos. 
+Devemos resolver isso no coração do nosso projeto... no app> arquivo <strong> settings.py</strong> que é nosso arquivo de configuração geral de projeto
+
+![settings1](./notebooks_nivelamento/imgs_markdown/settings1.png)
+
+Por padrão, temos de fábrica os seguintes itens já pré configurados
+
+![instaledapps1](./notebooks_nivelamento/imgs_markdown/instaledapps1.pngg)
