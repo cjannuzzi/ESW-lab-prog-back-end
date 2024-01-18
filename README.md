@@ -89,3 +89,8 @@ Para verificar se ativou... no seu terminal irá aparecer a imagem a seguir
 
 ![venv_ativado](./notebooks_nivelamento/imgs_markdown/venv_ativado.png)
 <br>
+
+4. No terminal `pip install django`
+<br>
+
+Para verificar se o django foi instalado na versão correta rode o  `django-admin --version` no terminal
