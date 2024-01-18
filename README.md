@@ -73,9 +73,11 @@ Começando com Django.
 1. Criando e Conhecendo o seu Projeto
 
 Mas qual é a ideia do projeto? Guardar registro de carros! Marca, modelo, ano e etc. 
-<br> É uma app simples e funcional!
+<br> 
+É uma app simples e funcional!
 
 1. Crie uma pasta com o nome do app;
+
 <br>
 2. Crie um ambiente virtual venv dentro da pasta;
 
@@ -91,6 +93,10 @@ Para verificar se ativou... no seu terminal irá aparecer a imagem a seguir
 <br>
 
 4. No terminal `pip install django`
+Para verificar se o django foi instalado na versão correta rode o  `django-admin --version` no terminal
+O retorno deve ser a versão instalada.
 <br>
 
-Para verificar se o django foi instalado na versão correta rode o  `django-admin --version` no terminal
+Até o momento temos:
+* ambiente virtual criado e ativado
+* django instalado e verificado
