@@ -82,8 +82,10 @@ Mas qual é a ideia do projeto? Guardar registro de carros! Marca, modelo, ano e
 ![venv](./notebooks_nivelamento/imgs_markdown/venv.png)
 <br>
 3. Ative o ambiente criado
+
 ![venv_ativar](./notebooks_nivelamento/imgs_markdown/venv_ativar.png)
 <br>
 Para verificar se ativou... no seu terminal irá aparecer a imagem a seguir
+
 ![venv_ativado](./notebooks_nivelamento/imgs_markdown/venv_ativado.png)
 <br>
