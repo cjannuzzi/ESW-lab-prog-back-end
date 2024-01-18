@@ -146,3 +146,6 @@ Note que não retornou nenhum resultado pois não temos ainda nada configurado a
 
 Temos uma outra forma mais visual de ver isso também pelo terminal:
 `python manage.py test`
+
+![manage_py_test2](./notebooks_nivelamento/imgs_markdown/manage_py_test2.png)
+
