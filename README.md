@@ -134,3 +134,13 @@ Seremos direcionados ao navegador e se tudo deu certo e o servidor startou..
 
 A imagem acima é como se fosse um Hello world do django rs
 
+7. Dando uma pincelada sobre TESTES bem rapidamente.
+É de conhecimento comum que códigos que possuem testes são melhores vistos.
+
+Mas como testar no django? Simples, podemos botar para rodar nossos testes da seguinte forma, no terminal:
+`.\manage.py test`
+
+![manage_py_test1](./notebooks_nivelamento/imgs_markdown/manage_py_test1.png)
+
+Note que não retornou nenhum resultado pois não temos ainda nada configurado a respeito, porém foi feita a rotina de execução do próprio django.
+
