@@ -67,3 +67,7 @@ A ideia é sempre que pegar um windows zerado logo executar esse comando para ev
 
 Conhecimento básicos que devemos saber para iniciar no python
 ver os notebooks
+
+Começando com Django.
+
+1. Criando e Conhecendo o seu Projeto
