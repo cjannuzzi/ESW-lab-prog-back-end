@@ -175,4 +175,4 @@ Devemos resolver isso no coração do nosso projeto... no app> arquivo <strong> 
 
 Por padrão, temos de fábrica os seguintes itens já pré configurados
 
-![instaledapps1](./notebooks_nivelamento/imgs_markdown/instaledapps1.pngg)
+![instaledapps1](./notebooks_nivelamento/imgs_markdown/instaledapps1.png)
