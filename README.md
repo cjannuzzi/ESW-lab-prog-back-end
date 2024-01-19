@@ -222,6 +222,8 @@ Láaa no nosso core do projeto (app), temos o urls.py e dentro desse arquivo tem
 
 ![urls1](./notebooks_nivelamento/imgs_markdown/urls1.png)
 
+10. Entendendo Apps e Camadas no Django
+
 Vamos falar um pouco sobre as camadas do django.
 
 ![camadas1](./notebooks_nivelamento/imgs_markdown/camadas1.png)
@@ -242,6 +244,8 @@ E como a views faria isso? Conversado com os Models, que é outra camada.
 A views vai buscar nos modals informações como por exemplo nome do carro, ano do carro e tudo mais. Nesse processo os models conversam com os bancos de dados e os bancos de dados retornam os dados para os models e os moderls por sua vez disponibilizam para as views. A view por sua vez devolve para o navegador do usuário a página de carros com os dados que ele solicitou.
 
 Pode parecer confuso agora porém veremos camada a camada mais a frente.
+
+11. Comando makemigrations
 
 
 
