@@ -209,7 +209,7 @@ Temos também o arquivo admin.py
 O arquivo admin tem relaçao com a admin do django. É uma tela de adminstração de conteúdo. Não são vistas pelos clientes finais de quem acessa o site, são vistas apenas pelos administradores do sistema. Através do admin conseguimos um CRUD completo de cars.
 
 ![terminal1](./notebooks_nivelamento/imgs_markdown/terminal1.png)
-
+r
 Subindo o servidor e através do /admin temos a tela admin.
 V
 ![adminpy2](./notebooks_nivelamento/imgs_markdown/adminpy2.png)
@@ -221,5 +221,28 @@ Contudo, de onde vem esse /admin?
 Láaa no nosso core do projeto (app), temos o urls.py e dentro desse arquivo temos permitida a rendização do admin/
 
 ![urls1](./notebooks_nivelamento/imgs_markdown/urls1.png)
+
+Vamos falar um pouco sobre as camadas do django.
+
+![camadas1](./notebooks_nivelamento/imgs_markdown/camadas1.png)
+
+Temos o nosso usuário usando o navegador, usando o nosso sistema que esta rodando no servidor
+
+Ele vai bater em alguma URL, então a nossa primeira camada é o URLS. É o roteamente de urls que o django faz essa interpretação.
+Portando, por exemplo, quando usuário bate na url /admin ele vai no arquivo de urls.py do core do projeto (app) e olha o tipo de urls acessada e qual o direcionamento que deve acontecer.
+
+![urls2](./notebooks_nivelamento/imgs_markdown/urls2.png)
+
+Logo, podemos entender que esse urls leva para uma página de admin que é uma view.
+
+Dentro do arquivo de views no core do projeto (app) estará o comando para retornar cars. Ela fará um trabalho de meio campo de trazer dados e retornar para o usuário.
+
+E como a views faria isso? Conversado com os Models, que é outra camada.
+
+A views vai buscar nos modals informações como por exemplo nome do carro, ano do carro e tudo mais. Nesse processo os models conversam com os bancos de dados e os bancos de dados retornam os dados para os models e os moderls por sua vez disponibilizam para as views. A view por sua vez devolve para o navegador do usuário a página de carros com os dados que ele solicitou.
+
+Pode parecer confuso agora porém veremos camada a camada mais a frente.
+
+
 
 
