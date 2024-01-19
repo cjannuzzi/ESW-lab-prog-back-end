@@ -134,6 +134,8 @@ Seremos direcionados ao navegador e se tudo deu certo e o servidor startou..
 
 A imagem acima é como se fosse um Hello world do django rs
 
+DETALHE: PARA DESLIGAR O SERVIDOR QUE SUBIU É SÓ APERTAR <strong>CTRL+C</strong>
+
 7. Dando uma pincelada sobre TESTES bem rapidamente.
 É de conhecimento comum que códigos que possuem testes são melhores vistos.
 
@@ -335,12 +337,15 @@ No terminal: `python manage.py runserver  `
 A imagem a seguir mostra que o server subiu na porta 8000.
 ![server](./notebooks_nivelamento/imgs_markdown/serve1.png)
 
-Vamos à tela de admin do django
+Vamos à tela de admin do django.
 ![server](./notebooks_nivelamento/imgs_markdown/serve2.png)
 
 ![server](./notebooks_nivelamento/imgs_markdown/server3.png)
 
-Ao logarmos
+Ao logarmos com o usuário criado como superusuário temos a tela a seguir.
 ![django admin](./notebooks_nivelamento/imgs_markdown/djangoadmin1.png)
 
+Nossa aplicação esta quase "zerada", só temos os itens defaults que é um administrador de grupos e um administrador de usuários. Olhe que nosso usuário (e únicio até então) criado já consta lá. Vamos clicar em Users e tirar a prova real.
+![django admin](./notebooks_nivelamento/imgs_markdown/djangoadmin2.png)
 
+14. Criando nosso primeiro modelo (Car)
