@@ -182,3 +182,44 @@ Devemos adicionar o app cars no settings.py nos INSTALLED_APPS
 ![cars2](./notebooks_nivelamento/imgs_markdown/cars2.png)
 
 Feito isso, agora podemos explorar melhor nossos arquivos da nossa nova app.
+
+Um arquivo muito importante é o models.py
+Em toda app que a gente criar nos vamos ter q utilizar esse arquivo pois é nele que iremos escrever nossos models ou modelos, ou fazendo uma analogia melhor... as nossas tabelas do banco de dados.
+
+É neste models.py que sera dito que a tabela carros terá o campo nome do carro, o campo ano do carro, o campo modelo do carro e que esses campos serão charfields de 100 caracteres ou que esses campos serão do tipo inteiro.
+
+Os models do django tem camada própria e é importante dominar isso.
+
+![models_cars1](./notebooks_nivelamento/imgs_markdown/models_cars1.png)
+
+Teremos mais a frente uma app vendedores de carro e nesta app também haverá um arquivo models.py e por ai vai.
+
+Temos também outro arquivo importante que é o views.py
+
+![views1](./notebooks_nivelamento/imgs_markdown/views1.png)
+
+Neste arquivo iremos escrever todas as views do nosso app cars.
+
+Basicamente a view tem a lógica que precisaremos aplicar a nossa aplicação como por exemplo quando um usuário bater no link /carros e quiser listar os carros na página de carros. Será lógica de trazer e renderizar que esta página estará nas views.py
+
+Temos também o arquivo admin.py
+
+![adminpy1](./notebooks_nivelamento/imgs_markdown/adminpy1.png)
+
+O arquivo admin tem relaçao com a admin do django. É uma tela de adminstração de conteúdo. Não são vistas pelos clientes finais de quem acessa o site, são vistas apenas pelos administradores do sistema. Através do admin conseguimos um CRUD completo de cars.
+
+![terminal1](./notebooks_nivelamento/imgs_markdown/terminal1.png)
+
+Subindo o servidor e através do /admin temos a tela admin.
+V
+![adminpy2](./notebooks_nivelamento/imgs_markdown/adminpy2.png)
+
+O usuário e senha veremos mais para frente.
+
+Contudo, de onde vem esse /admin?
+
+Láaa no nosso core do projeto (app), temos o urls.py e dentro desse arquivo temos permitida a rendização do admin/
+
+![urls1](./notebooks_nivelamento/imgs_markdown/urls1.png)
+
+
