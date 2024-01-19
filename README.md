@@ -298,4 +298,49 @@ Com a extensão instalada temos a seguinte visualização
 
 ![sqlite1](./notebooks_nivelamento/imgs_markdown/sqlite1.png)
 
+Observe que eles criou as 11 tabelas com o comando migrate.
+
+Sera na tabela auth_user que cadastraremos nossos usurários ... inclusive superusuários
+
+![auth_user](./notebooks_nivelamento/imgs_markdown/auth_user1.png)
+
+Temos alguns campos nessa tabela conforme imagem a a seguir.
+
+![auth_user](./notebooks_nivelamento/imgs_markdown/auth_user2.png)
+
+Note na imagem acima que temos inclusive já alguns campos que perguntam se ele é superusuário ou não
+
+Enfim, o banco de dados já esta inicializado com a estrutura básica que precisamos para começar.
+
+13. Acessando o Admin do Django
+
+A tabela de user esta criada, porém vazia. Vamos resolver isso!
+
+No terminal:  `python manage.py createsuperuser`
+
+![Superusuario](./notebooks_nivelamento/imgs_markdown/superuser1.png)
+
+Destaque para <strong> This password is too common </strong> kkkk
+
+De qualquer forma o superusuario esta criado kkk e podemo ver na tabela auth_user
+![usuario](./notebooks_nivelamento/imgs_markdown/user1.png)
+
+Curiosidade!!! O django já vem com um sistema de encriptação de senhas no banco de dados! Muita coisa pronta né?!
+
+Na teoria... com nosso superusuário criado já conseguimos acessar o admin do django. Vamos testar!
+
+No terminal: `python manage.py runserver  ` 
+![server](./notebooks_nivelamento/imgs_markdown/runserver1.png)
+
+A imagem a seguir mostra que o server subiu na porta 8000.
+![server](./notebooks_nivelamento/imgs_markdown/serve1.png)
+
+Vamos à tela de admin do django
+![server](./notebooks_nivelamento/imgs_markdown/serve2.png)
+
+![server](./notebooks_nivelamento/imgs_markdown/server3.png)
+
+Ao logarmos
+![django admin](./notebooks_nivelamento/imgs_markdown/djangoadmin1.png)
+
 
