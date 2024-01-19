@@ -112,14 +112,14 @@ Então.. fica assim "django inicie o projeto de nome app na pasta raiz em que es
 Por que app? Ela é o coração do projeto..se eu chamasse de carros seria ./carros/carros/ arquivos do django então poderia ficar confuso. Por questão de organização escolhi esse nome.
 <br>
 
-Ficando `django-admin startproject app .`
+Ficando, no terminal: `django-admin startproject app .`
 <br>
 
 6. Perceberam que ao dar o startproject o djando criou o arquivo `manage.py`?
 
 Este arquivo chama uma série de comandos internos para rodar nossa aplicação django. 
 
-O próximo comando no terminal é o `python manage.py runserver`
+O próximo comando no terminal é :  `python manage.py runserver`
 
 ![manage_py_runserver](./notebooks_nivelamento/imgs_markdown/manage_py_runserver.png)
 
@@ -245,8 +245,57 @@ A views vai buscar nos modals informações como por exemplo nome do carro, ano 
 
 Pode parecer confuso agora porém veremos camada a camada mais a frente.
 
-11. Comando makemigrations
+11. Comando `makemigrations`
 
+Usaremos com certa frequencia no django.
 
+Esse comando é o `makemigrations`
+
+No terminal: `python manage.py makemigrations`
+
+Mas o que o `makemigrations` faz?
+Ele varre o projeto inteiro, no sentido de dar uma geral e não no sentido de excluir! O django olha app por app, camada por camada, modelo por modelo e monta os migrations que são arquivos de código python (neste contexto) que tem escritos neles comandos para o banco de dados! 
+Por exemplo, dentro de um arquivo migrations pode ter um comando de create table no banco de dados (um comando django para o BD para criação de tabela) e esse comando pode dizer assim: rode esse comando aqui e criar uma tabela no banco de dados com o nome cars.
+
+![migrations](./notebooks_nivelamento/imgs_markdown/migrations1.png)
+
+Na imagem acima, rodamos o migrations porém não houve alteração alguma pois ainda não criamos nada em cars
+
+Porém, notem que dentro da app cars criou uma pasta com um __ init __ com o nome de migration e se houve algo para ser colocado nela seria ali o local.
+
+![migrations](./notebooks_nivelamento/imgs_markdown/migrations2.png)
+
+![migrations](./notebooks_nivelamento/imgs_markdown/migrations3.png)
+
+12. Comando `migrate`
+
+O comando migrate já um comando que vai executar as migrations.
+
+No terminal: `python manage.py migrate`
+
+Mas oque que o migrate realmente faz?
+Ele faz o Django varrer todas as pastas de migrations dentro das nossas apps e de fato vai criar esse script de banco de dados e executar dentro do banco de dados criando toda a nossa estrutura.
+Mesmo não havendo nenhuma estrutra montada pela gente, o django em sí já tem as próprias estruturas que precisa criar.
+Vamos rodar o migrate para ver o tanto de coisas que o django vai fazer.
+
+![migrate](./notebooks_nivelamento/imgs_markdown/migrate.png)
+
+Executou várias migrations de criação de tabela de usuário, validação... coisas internas que o django precisa para trabalhar
+
+#### Importante!
+
+<strong> Sempre que houver uma alteraçãos em nossos models, nossas tabelas do banco de dados, enfim, sempre que alterarmos alguma coisa... para passarmos essas alterações precisamos: 
+
+1. Rodar, no terminal: `python manage.py makemigrations`
+Para criar o script de banco de dados
+
+2. Rodar, no terminal: `python manage.py migrate`
+Para pegar o script gerado e executar no banco de dados criando tudo que precisa. </strong>
+
+Para visualizarmos nosso banco de dados sqlite, vamos usar a extensão SQLite Viewer (https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer)
+
+Com a extensão instalada temos a seguinte visualização
+
+![sqlite1](./notebooks_nivelamento/imgs_markdown/sqlite1.png)
 
 
