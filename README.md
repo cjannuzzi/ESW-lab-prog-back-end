@@ -348,4 +348,11 @@ Ao logarmos com o usuário criado como superusuário temos a tela a seguir.
 Nossa aplicação esta quase "zerada", só temos os itens defaults que é um administrador de grupos e um administrador de usuários. Olhe que nosso usuário (e únicio até então) criado já consta lá. Vamos clicar em Users e tirar a prova real.
 ![django admin](./notebooks_nivelamento/imgs_markdown/djangoadmin2.png)
 
-14. Criando nosso primeiro modelo (Car)
+## Django e Banco de Dados (model e admin)
+
+#####  14. Criando nosso primeiro modelo (Car)
+
+Neste parte iremos começar a desenvolver o modelo de carros...criar a tabela de dados para gerenciar os registros de carros.
+
+Bora para o models.py do app cars.
+
