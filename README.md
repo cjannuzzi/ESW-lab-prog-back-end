@@ -356,3 +356,19 @@ Neste parte iremos começar a desenvolver o modelo de carros...criar a tabela de
 
 Bora para o models.py do app cars.
 
+![class car](./notebooks_nivelamento/imgs_markdown/cars3.png)
+
+Criamos a classe chamada Car. O nome da classe vai ser o nome da tabela no banco de dados. Car Será o objeto que vai que tomar conta disso.
+
+A classe criada Car tem uma herança... ela vai herdar da classe  Model que já esta pronta no Django. Estamos indicando para o Django que a classe Car será um modelo.
+Precisamos agora escrever os campos que a nossa tabela vai ter.
+
+O primeiro campo sera o <strong>id</strong>.
+
+Quando declaramos que nosso <strong>id</strong> será um <strong>autofield</strong> e ele vai ser a <strong>chave primária</strong> da nossa tabela do banco de dados eu estou usando o autofiled que é uma função já existente no Django e depois quando migrarmos para nosso banco de dados ele vai criar um campo lá se auto incrementando, ou seja... se cadastramos nosso primeiro carro ele tera o id = 1, nosso segundo carro id=2 e por ai vai de forma <strong> automática </strong>
+
+![class car](./notebooks_nivelamento/imgs_markdown/cars4.png)
+
+
+
+
