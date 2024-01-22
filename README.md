@@ -374,6 +374,16 @@ Bora para próxima
 ![class car](./notebooks_nivelamento/imgs_markdown/cars5.png)
 
 O campo model (l.6) não tem nada a ver com a classe Model.. ele é so o nome de um campo da minha tabela. O campo será um <strong>CharField()<strong> que é o tipo texto.. que aceita todo tipo de caractere.
-O parametros max_length=200 indica que o número máximo de caracteres são 200.
+IntegerField() indica que o campo vai aceitar um número inteiro.
+FloatField() indica que o campo vai aceitar um número co vírgula.
+
+ parametros:
+ max_length=200 indica que o número máximo de caracteres são 200.
+ blank=True indica que ao cadastrar um novo carro no sistema esse campo de ser deixado em branco... não informar nada neste campo
+ null = True indica que ao cadastrar um novo carro no sistema esse campo de ser deixado nulo... não informar nada neste campo
+
+ É interessante que criemos o hábito de inserar variáveis em ingles por padrão.
+
+
 
 
