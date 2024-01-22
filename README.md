@@ -412,3 +412,38 @@ Podemos conferir agora se a tabela foi criada.
 O Django tem um método para nomear a tabela que segue nome_da_aplicacao_+_nome_da_tabela (cars_car)
 
 ![cars_car](./notebooks_nivelamento/imgs_markdown/tabela1.png)
+
+#####  16. Configurando o Admin do nosso model (Car)
+
+Vamos agora cadastrar carros em nosso sistema já que temos nossa tabela criada.
+
+A ideia é fazer o administrador do sistema através do django-admin acessar o sistema para ter disponível o cadastramento de carros.. inserir no banco de dados.
+
+Bora rodar nosso servidor para ver como estamos. 
+
+No terminal:  `python manage.py runserver`
+
+Note que ela ainda não aparece no django admin pois não demos nenhum comando para a tabela aparecer no painel de admin. Para fazer isso devemos trabalhar no admin.py do cars. Precisamos registar nossos modelos lá para podermos usar.
+
+
+![admin.py cars](./notebooks_nivelamento/imgs_markdown/adminpy3.png)
+
+<strong>list_display</strong> diz quais campos queremos que apareçam na nossa grid
+<strong>search_fields</strong> diz qual campo é pesquisável
+
+Ja configurado o admin do carro, porém ainda não registramos esse admin criado.
+
+Vamos resolver isso...
+
+![admin.py cars](./notebooks_nivelamento/imgs_markdown/adminpy4.png)
+
+O admin.site.register(parametro 1, parametro 2) pede 2 parametros, sendo o primeiro o modelo (tabela no BD) e o segundo as configurações de admin que queremos para este modelo. 
+
+Ao entrarmos no /admin o cars já estara disponivel para cadastro e pesquisa (modelos de carro).
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars6.png)
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars7.png)
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars8.png)
+
