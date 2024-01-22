@@ -406,3 +406,9 @@ No terminal: `python manage.py makemigrations` para gerar um script com instruç
 No terminal: `python manage.py migrate` para varrer a aplicação e atraves da ORM do django traduzir para um script SQL e executar o(s) script(s) migrations criado(s).
 
 ![migrate](./notebooks_nivelamento/imgs_markdown/migrate1.png)
+
+Podemos conferir agora se a tabela foi criada.
+
+O Django tem um método para nomear a tabela que segue nome_da_aplicacao_+_nome_da_tabela (cars_car)
+
+![cars_car](./notebooks_nivelamento/imgs_markdown/tabela1.png)
