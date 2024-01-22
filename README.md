@@ -447,3 +447,5 @@ Ao entrarmos no /admin o cars já estara disponivel para cadastro e pesquisa (mo
 
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars8.png)
 
+
+#####  17. Configurações adicionais do nosso projeto
