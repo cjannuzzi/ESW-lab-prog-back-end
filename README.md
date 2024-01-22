@@ -388,4 +388,21 @@ Feito isso temos a tabela básica feita!
 
 #####  15. Criando tabela no Banco de Dados
 
+Criamos uma tabela de carros anteriormente mas como faço o Django entender que isso é uma tabela de carros e que serão armazenados dados de carros nela aplicando no banco de dados?
 
+Precisamos voltar naqueeela didática imagem.
+
+![camadas1](./notebooks_nivelamento/imgs_markdown/camadas1.png)
+
+Estamos neste momento, na imagem, estamos na camada Models. Um model nao se comunica diretamente com o banco de dados... existe uma API chamada <strong>ORM</strong> que faz que esse intermédio. O Django já vem com esse ORM proprietário dele chamado <strong>Django ORM</strong> que é a API responsável por ser comunicar com o BD... pegando o models.py traduzir e executar as configurações no BD. Essa via é de mão dupla..ele pode fazer o caminho inverso também por exemplo levando informações no BD e trazendo para nossa View e entregar para o usuário a lista de carros.
+
+Vamos rodar um comando para dizer ao django para migrar a tabela e escrever no BD. Os comandos são nosso conhecidos `makemigrations` e `migrate`.
+
+No terminal: `python manage.py makemigrations` para gerar um script com instruções para nosso BD
+
+![makemigrations](./notebooks_nivelamento/imgs_markdown/migrations4.png)
+
+
+No terminal: `python manage.py migrate` para varrer a aplicação e atraves da ORM do django traduzir para um script SQL e executar o(s) script(s) migrations criado(s).
+
+![migrate](./notebooks_nivelamento/imgs_markdown/migrate1.png)
