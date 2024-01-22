@@ -384,6 +384,8 @@ FloatField() indica que o campo vai aceitar um número co vírgula.
 
  É interessante que criemos o hábito de inserar variáveis em ingles por padrão.
 
+Feito isso temos a tabela básica feita!
 
+#####  15. Criando tabela no Banco de Dados
 
 
