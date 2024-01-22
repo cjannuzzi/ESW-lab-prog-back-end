@@ -369,6 +369,11 @@ Quando declaramos que nosso <strong>id</strong> será um <strong>autofield</stro
 
 ![class car](./notebooks_nivelamento/imgs_markdown/cars4.png)
 
+Bora para próxima
 
+![class car](./notebooks_nivelamento/imgs_markdown/cars5.png)
+
+O campo model (l.6) não tem nada a ver com a classe Model.. ele é so o nome de um campo da minha tabela. O campo será um <strong>CharField()<strong> que é o tipo texto.. que aceita todo tipo de caractere.
+O parametros max_length=200 indica que o número máximo de caracteres são 200.
 
 
