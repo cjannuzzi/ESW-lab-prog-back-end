@@ -1,6 +1,7 @@
-# Django Master
+![image](https://github.com/cjannuzzi/ESW-lab-prog-back-end/assets/95255704/37d67dc6-ef7d-4345-bc04-5cfa9205629b)
 
-Destrinchando e planejando aula.
+
+Em construção.
 
 ## Ambientação e instalação
 
