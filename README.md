@@ -22,7 +22,7 @@ Neste repositório, você encontrará:
 
 ## 🧭 Como Navegar
 
-1. 📖 Comece pela pasta `E-books da aula` para entender os fundamentos.
+1. 📖 Comece pela pasta `notebooks_nivelamento` para entender os fundamentos.
 2. 🛠️ Explore os `Códigos-Fonte` para ver os exemplos em ação.
 3. 🏋️‍♀️ Pratique com os `Exercícios` para aperfeiçoar suas habilidades.
 4. 📌 Veja os projetos dos colegas na seção `Projetos` para inspiração.   **[EM CONSTRUÇÃO]**
@@ -60,9 +60,10 @@ Prof. Me. [Caio Jannuzzi](https://www.linkedin.com/in/caiojannuzzi/)
 
 ---
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8299360.svg)](https://doi.org/10.5281/zenodo.8299360)
+---
 
-![image](https://github.com/cjannuzzi/ESW-lab-prog-back-end/assets/95255704/37d67dc6-ef7d-4345-bc04-5cfa9205629b)
 
+![vamos comecar](https://github.com/cjannuzzi/ESW-lab-prog-back-end/assets/95255704/dca7e2c8-018b-4f96-97cc-a81d316158c9)
 
 Em construção.
 
