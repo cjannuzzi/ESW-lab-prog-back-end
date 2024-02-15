@@ -53,7 +53,7 @@ Prof. Me. [Caio Jannuzzi](https://www.linkedin.com/in/caiojannuzzi/)
 
 > "A educação é a arma mais poderosa que você pode usar para mudar o mundo." - **Nelson Mandela**
 > 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8299360.svg)](https://doi.org/10.5281/zenodo.8299360)
+
 ---
 
 ⭐️ Lembre-se de dar uma estrela neste repositório se ele te ajudou!
