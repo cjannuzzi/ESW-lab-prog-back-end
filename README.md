@@ -15,16 +15,15 @@ Bem-vindo ao repositório das aulas de **Laboratório de Programação Back End*
 Neste repositório, você encontrará:
 
 - 📂 **Códigos-Fonte**: Todos os exemplos práticos das aulas.
-- 🧪 **Exercícios**: Práticas para aperfeiçoar o que foi aprendido.
-- 🌐 **Projetos**: Trabalhos desenvolvidos ao longo do semestre.  **[EM CONSTRUÇÃO]**
+- 🧪 **notebooks_nivelamento**: Pasta contendo o nosso nivelamento do conhecimento prévio básico necessário para cursar a disciplina de maneira tranquila.
 
 ---
 
 ## 🧭 Como Navegar
 
 1. 📖 Comece pela pasta `notebooks_nivelamento` para entender os fundamentos.
-2. 🛠️ Explore os `Códigos-Fonte` para ver os exemplos em ação.
-3. 🏋️‍♀️ Pratique com os `Exercícios` para aperfeiçoar suas habilidades.
+2. 🛠️ Explore os `Códigos-Fonte` para ver o andamento em ação.
+3. 🏋️‍♀️ Pratique juntamente com seu grupo definido para aperfeiçoar suas habilidades e criarem seu próprio app.
 4. 📌 Veja os projetos dos colegas na seção `Projetos` para inspiração.   **[EM CONSTRUÇÃO]**
 
 ---
