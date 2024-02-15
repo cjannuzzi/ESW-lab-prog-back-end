@@ -53,19 +53,22 @@ Prof. Me. [Caio Jannuzzi](https://www.linkedin.com/in/caiojannuzzi/)
 <br>
 
 > "A educação é a arma mais poderosa que você pode usar para mudar o mundo." - **Nelson Mandela**
-
+> 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8299360.svg)](https://doi.org/10.5281/zenodo.8299360)
 ---
 
 ⭐️ Lembre-se de dar uma estrela neste repositório se ele te ajudou!
 
 ---
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8299360.svg)](https://doi.org/10.5281/zenodo.8299360)
+
 ---
 
 
 ![vamos comecar](https://github.com/cjannuzzi/ESW-lab-prog-back-end/assets/95255704/dca7e2c8-018b-4f96-97cc-a81d316158c9)
 
-Em construção.
+Neste README.MD que estará em constante atualização, acompanharemos o desenvolvimento de um app para gestão de carros!
+
+**Objetivo da disciplina é o aluno juntamente com seu grupo, ao final do semestre apresentar um app totalmente funcional (CRUD).**
 
 ## Ambientação e instalação
 
