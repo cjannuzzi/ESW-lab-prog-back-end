@@ -22,9 +22,8 @@ Neste repositório, você encontrará:
 ## 🧭 Como Navegar
 
 1. 📖 Comece pela pasta `notebooks_nivelamento` para entender os fundamentos.
-2. 🛠️ Explore os `Códigos-Fonte` para ver o andamento em ação.
-3. 🏋️‍♀️ Pratique juntamente com seu grupo definido para aperfeiçoar suas habilidades e criarem seu próprio app.
-4. 📌 Veja os projetos dos colegas na seção `Projetos` para inspiração.   **[EM CONSTRUÇÃO]**
+2. 🏋️‍♀️ Pratique juntamente com seu grupo definido para aperfeiçoar suas habilidades e criarem seu próprio app.
+3. 📌 Veja os projetos dos colegas na seção `Projetos` para inspiração.   **[EM CONSTRUÇÃO]**
 
 ---
 
