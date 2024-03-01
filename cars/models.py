@@ -8,3 +8,6 @@ class Car(models.Model):
     factory_year = models.IntegerField(blank=True, null=True)  # ano de fabricação
     model_year = models.IntegerField(blank=True, null=True)  # ano do carro
     value = models.FloatField(blank=True, null=True)  # valor do carro
+
+    def __str__(self):
+        return self.model

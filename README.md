@@ -532,3 +532,101 @@ E temos outro painel
 
 Bora adicionar!
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars11.png)
+
+Primeiro carro a ser cadastrado é nosso Marea
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/marea1.png)
+
+Cadastrado!
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/marea2.png)
+
+Reparem que os campos são MODEL, BRAND, FACTORY YEAR e VALUE. Esses são os campos que sinalizamos em nosso admin.py que deveriam ter 
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/adminpy5.png)
+
+Caso queiramos por algum motivo deletar o campo VALUE, é só ir no admin.py e deletar por lá, salvar e atualizar a página web do django-admin que o VALUE some.
+
+Em resumo: 
+list_display = são os campos que queremos que apareçam.
+search_fields = são os campos onde podem ser pesquisados
+
+Adicionemos outros carros para demonstrar esse search_fields.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars12.png)
+
+Agora podemos usar o campo de buscar.
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/opala1.png)
+
+Buscamos o Opala como exemplo.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/opala2.png)
+
+Explicado a questão da busca apenas no campo Model.
+Caso queiramos que ele também busque por fabricante, devemos adicionar BRAND ao campo search_fields.
+
+Gostei a ideia...vamos adicionar também!
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand1.png)
+
+Salve e atualize a página.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand2.png)
+
+Deu certo!
+
+Próximo passo...
+
+Reparam que nosso painel de admin esta todo em inglês?
+Zero problema mas se tu preferir em português, devemos configurar nosso django para operar em porguês.
+Bora desenrolar isso!
+
+Bora para nosso "core <3" rsrs. Nossa pasta app é o coração do nosso projeto. Dentro dessa pasta temos o settings.py e nele é só mudar a língua para pt-BR.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/lingua1.png)
+
+Salve e atualize a página.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/lingua2.png)
+
+"aahin Caio mas não traduziu o Cars, Model, Brand, Factory, Model Year e nem o Value"
+
+-- Calma ae paizão, a modificação feita nem tocou nela pois foram campos "codados"
+
+Ja que estamos abrasileirando a parada, por qual motivo não mudamos também o TIME_ZONE?
+
+Bora mudar!
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/timezone1.png)
+Feito! 
+
+Bora para uma próxima configuração aew.
+
+Dentro do nosso models.py da nossa pasta cars temos 
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars2.png)
+
+Vamos criar um função __ str __(self) que retorna o self.model
+Ok, mas que bruxaria é essa?
+A função "dunder str" é uma função padrão de model e ela quando não criada mostraria nossos models de uma maneira feia e sequencial. Ao arbtitrarmos para sobrescrever no nosso modelo deste jeito, definimos que ela tem que retorne o nome do modelo do carro.
+
+Ok, disse disse e não manjei mesmo assim.
+Bora pro visual...
+Vou comentar a função criada para que vejamos como seria sem ela.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars3.png)
+
+Comentada!
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars4.png)
+
+Viram? Ela vai simplesmente de forma sequenciada feiona.
+
+Agora bora descomentar a função criada e ver como que vai ficar.
+
+Agora que vi que no código digitei errado rsrs, lancei __ srt __ quando deveria ter lançado __ str __. Enfim, corrido!
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars5.png)
+
+Vejamos a alteração na visualização ao atualizar a página.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars6.png)
