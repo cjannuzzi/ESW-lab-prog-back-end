@@ -630,3 +630,5 @@ Agora que vi que no código digitei errado rsrs, lancei __ srt __ quando deveria
 Vejamos a alteração na visualização ao atualizar a página.
 
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars6.png)
+
+Essa jogada da função não serve tão somente para deixar bonitinho não. Mais para frente na ORM do Django quando formos buscar dados essa jogada será muito útil.
