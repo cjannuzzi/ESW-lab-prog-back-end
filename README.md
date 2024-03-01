@@ -689,5 +689,7 @@ Agora no modelo de Car, devemos modificar o campo brand né para não dar proble
 
 "Mas Caaio, oqq rolou?"
 -- Calma lá paizão, bora desenrolar isso ai.
-
+O django trás essa "função" ForeignKey pronta que basicamente diz "mermão esse campo aqui terá ligação com outra tabela!" e tabela que em que vai rolar essa ligação é o primeiro parametro que se coloca (que no caso foi o Brand). 
+On_delete no models PROTECT quer dizer que os carros estao protegidos de um possível delete de marca. 
+Por exemplo, imagine que temos 1000 carros cadastrados da marca Fiat..e do nada me da a doidera de querer excluir a marca Fiat. O que aconteceria? Há uma dependencia envolvida, esse protect protege para que os 1000 caros não sejam deletados. Uma curiosidade é que ao invés de PROTECT eu usasse um CASCADE..ao deletar a marca todos os 1000 carros cadastrados com essa marca iriam de arrasta para cima.
 
