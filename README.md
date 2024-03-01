@@ -676,5 +676,18 @@ Se liguem na pintura rupestre de ilustração.
 
 Enfim, nosso campos Brand agora terá que ter um registro específico e não mais um texto livre.
 
-Bora criar.
+Para viabilizar essa ideia, bora criar um modelo novo (class Brand) no nosso models.py da cars.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand3.png)
+
+Nesse modelo teremos o id que será único para cada registro e também o nome de cada marca.
+
+Agora no modelo de Car, devemos modificar o campo brand né para não dar problema pois no momento ele está do tipo texto e mudaremos para o tipo ForeignKey
+
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand4.png)
+
+"Mas Caaio, oqq rolou?"
+-- Calma lá paizão, bora desenrolar isso ai.
+
 
