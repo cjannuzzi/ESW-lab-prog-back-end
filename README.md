@@ -632,3 +632,49 @@ Vejamos a alteração na visualização ao atualizar a página.
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars6.png)
 
 Essa jogada da função não serve tão somente para deixar bonitinho não. Mais para frente na ORM do Django quando formos buscar dados essa jogada será muito útil.
+
+##### 18. Criando modelo e admin de marcas (ForeignKey)
+
+Vamos agora explorar um conceito de tabelas, ligação de dados e chave estrangeira.
+
+Bora subir nosso servidor local 
+```python manage.py runserver```
+Entrem no django-admin dele
+```http://127.0.0.1:8000/admin/```
+
+E se pudessmos preparar uma lista de fabricantes de carros que aparece para admin quando ele vai cadastrar um novo veículo? Seria maneiro né? Bora!
+
+Mas primeiro, bora <str>deletar todos os carros</str> já criados em nossa tabela.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/deletar1.png)
+
+Confirme e já era.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/deletar2.png)
+
+Para que façamos a alteração que iremos desenrolar agora, precisamos que a tabela esteja vazia.
+
+Vamos melhorar nossa tela de administrador!
+
+Bora para o models.py em cars.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars7.png)
+
+Vamos criar um cadastro de marcas para que consigamos cadastrar a marca e depois usar a marca quando formos cadastrar um carro. E isto é uma ligação de chave estrangeira entre tabelas!
+
+Hoje nosso campo Brand é muito livre, se quisermos lançar uma marca maluca que não existe ele vai aceitar e é isso, não é muito legal essa liberdade toda. 
+
+Precismos criar uma nova tabela e linkar os dois para que haja uma validação. 
+
+Na nova tabela a ser criada, haverá uma maneira de selecionar os dados que serão ligadas por chaves ao nosso campo Brand de Car.
+
+Se liguem na pintura rupestre de ilustração.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/tabela2.png)
+
+1 para 1 será a relação, um registro de marca de carro estará ligado a uma marca no banco de dados.
+
+Enfim, nosso campos Brand agora terá que ter um registro específico e não mais um texto livre.
+
+Bora criar.
+
