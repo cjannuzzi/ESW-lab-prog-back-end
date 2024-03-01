@@ -516,3 +516,19 @@ Ao entrarmos no /admin o cars já estara disponivel para cadastro e pesquisa (mo
 
 
 #####  17. Configurações adicionais do nosso projeto
+Bora subir nosso servidor local 
+```python manage.py runserver```
+Entrem no django-admin dele
+```http://127.0.0.1:8000/admin/```
+
+Vemos que anteriormente já configuramos no administração de carros (cars) e ele já aparece em nosso painel de administrador do sistema o modelo de carros para começarmos a inserir os modelos de carros. Vamos a seguir ver algumas configurações para deixar mais usual.
+
+Entremos em Cars
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars9.png)
+
+E temos outro painel
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars10.png)
+
+Bora adicionar!
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/cars11.png)
