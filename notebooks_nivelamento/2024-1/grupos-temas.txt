@@ -1,10 +1,10 @@
-Grupo 01 - 
-Grupo 02 -
-Grupo 03 -
-Grupo 04 -
+Grupo 01 - Xadrez temático futebol carioca
+Grupo 02 - Sitema de cadastro de restaurantes
+Grupo 03 - Site de Cadastro de Receitas
+Grupo 04 - Lembrete diário
 Grupo 05 -
-Grupo 06 -
+Grupo 06 - Catálogo de animes/series/filmes/etc
 Grupo 07 -
 Grupo 08 -
-Grupo 09 -
-Grupo 10 -
+Grupo 09 - Sistema de gestão e cadastro de Pokémon
+Grupo 10 - Deck Builder Yu-Gi-Oh
