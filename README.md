@@ -690,6 +690,46 @@ Agora no modelo de Car, devemos modificar o campo brand né para não dar proble
 "Mas Caaio, oqq rolou?"
 -- Calma lá paizão, bora desenrolar isso ai.
 O django trás essa "função" ForeignKey pronta que basicamente diz "mermão esse campo aqui terá ligação com outra tabela!" e tabela que em que vai rolar essa ligação é o primeiro parametro que se coloca (que no caso foi o Brand). 
-On_delete no models PROTECT quer dizer que os carros estao protegidos de um possível delete de marca. 
-Por exemplo, imagine que temos 1000 carros cadastrados da marca Fiat..e do nada me da a doidera de querer excluir a marca Fiat. O que aconteceria? Há uma dependencia envolvida, esse protect protege para que os 1000 caros não sejam deletados. Uma curiosidade é que ao invés de PROTECT eu usasse um CASCADE..ao deletar a marca todos os 1000 carros cadastrados com essa marca iriam de arrasta para cima.
+On_delete no models PROTECT quer dizer que os carros estao protegidos de uma possível tentativa de deletar a marca em que estao cadastrados. 
+Por exemplo, imagine que temos 1000 carros cadastrados da marca Fiat..e do nada me da a doidera de querer excluir a marca Fiat. O que aconteceria? Há uma dependencia envolvida, esse protect protege para que os 1000 caros não sejam deletados nesse impulso, havera um impedimento em função da relação existente. Uma curiosidade é que ao invés de PROTECT eu usasse um CASCADE..ao deletar a marca todos os 1000 carros cadastrados com essa marca iriam de arrasta para cima.
+Related_name é somente como gostariamos de chamar essa relação...pode colocar qualquer coisa desde que entendam que há uma relação ali.
+
+Lembram do __ str __ que dizemos no Car?
+Devermos fazer também no Brand.
+
+IMPORTANTE: QUALQUER ALTERAÇÃO QUE FIZERMOS A NÍVEL DE MODELO, NÃO ADIANTA SOMENTE SALVAR SEM INFORMAR AO BANDO DE DADOS.
+
+Devemos usarmos nossos comandos já conhecidos para toda alteração de modelos, tabelas e BD.
+
+`python manage.py makemigrations`
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/makemi1.png)
+
+E depois
+
+`python manage.py migrate`
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/migrate2.png)
+
+Agora se dermos um pulo em nosso banco de dados, podemos perceber que temos a tabela brand criada
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand5.png)
+
+Bora rodar nosso servidor novamente!
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/painel1.png)
+
+Vejam que nada mudou mesmo com a gente adicionando uma penca de novidades...
+Frustante? Não, a gente somente não indicou pra o django em sí o que foi realmente feito. Não podemos dar esse mole. Não vai aparecer Brands ali a não ser que digamos que deve aparacer? 
+
+Lembram como se faz?
+
+Não!? Haha bora lembrar! Devemos alterar o admin.py da nossa pasta cars.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand6.png)
+
+Agora sim, podemos atualizar nossa página após termos informado ao django essas novas instruções.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand7.png)
+
+Vamos entrar no Brands e adicionar as marcas.
 
