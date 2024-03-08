@@ -1,10 +1,10 @@
 Grupo 01 - Xadrez temático futebol carioca
 Grupo 02 - Sitema de cadastro de restaurantes
 Grupo 03 - Site de Cadastro de Receitas
-Grupo 04 - Lembrete diário
-Grupo 05 -
+Grupo 04 - Loja de roupas
+Grupo 05 - Loja de skins
 Grupo 06 - Catálogo de animes/series/filmes/etc
-Grupo 07 -
-Grupo 08 -
+Grupo 07 - Agendador de sala da Univassouras
+Grupo 08 - Sistema de E-commerce
 Grupo 09 - Sistema de gestão e cadastro de Pokémon
 Grupo 10 - Deck Builder Yu-Gi-Oh
