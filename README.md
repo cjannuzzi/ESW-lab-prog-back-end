@@ -785,3 +785,56 @@ Vamos cadastrar agora um carro em Cars!
 Notem que agora temos em Brand um menu drop-down que esta diretamente ligado as marcas que cadastramos anteriormente!
 
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars9.png)
+
+Cadastremos nosso Marea 20v
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars10.png)
+
+Cadastrado
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars11.png)
+
+Vamos verificar nas tabelas?
+
+Vejamos a tabela <strong>cars_car<strong>, nela já conseguimos identificar nosso magnífico Marea 20v cadastrado. Podemos notar também que não temos mais um campo de Brand.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/tabela_cars_car1.png)
+
+Não dispomos mais de um campo de Brand como anteriormente, contudo temos agora um brand_id que esta referenciado pelo Marea 20v como 1. Dito isso, a marca dela faz a ligação lá com a tabela de brand (cars_brand) em nela a Fiat o id é igual a 1.
+
+Veja a tabela cars_brand a seguir.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/tabela_cars_brand1.png)
+
+Resumindo... o brand_id do Marea é 1 e esse 1 faz referencia direta a tabela brand em que o 1 esta relacionado a marca Fiat.
+
+Caso cadastremos outros carros a lógica será a mesma.
+
+Bora cadastrar outro carro.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars12.png)
+
+Pronto.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars13.png)
+
+Vejamos agora em nosso banco de dados a tabela de carros e a tabela de marcas para validar a lógica utilizada.
+
+Tabela de carros OK.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/tabela_cars_car2.png)
+
+Tabela de marcas OK também.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/tabela_cars_brand2.png)
+
+É interessante observar que em nenhum momento nós criamos o campo/coluna brand_id em nossos models.py
+A próxima imagem comprova isso.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_brand4.png)
+
+Contudo, dizemos para o Django que o campo brands é uma referencia a tabela de brands e o django faz o resto. Só precisamos saber codar da melhor maneira possível.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_brand5.png)
+
+Temos espaço para melhorias, vejamos.
