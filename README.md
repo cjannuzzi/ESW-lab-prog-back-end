@@ -838,3 +838,5 @@ Contudo, dizemos para o Django que o campo brands é uma referencia a tabela de 
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_brand5.png)
 
 Temos espaço para melhorias, veremos em breve.
+
+##### 19. Armazenando imagens dos carros
