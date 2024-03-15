@@ -839,4 +839,64 @@ Contudo, dizemos para o Django que o campo brands é uma referencia a tabela de 
 
 Temos espaço para melhorias, veremos em breve.
 
+Em nosso modelo de carro vamos dar um upgrade nele.
+Vamos adicionar:
+- um campo para a Placa do carro, o nome do campo será plate (placa).
+- campo para o administrador poder subir uma foto do carro.
+
+O Django não armazena imagens no banco de dados... ou melhor, até armazena... mas deixaria o banco de dados gigaaante. É sempre melhor armazenar uma referencia ao caminho da mídia... devemos criar e armazenar as imagens numa pasta em nosso projeto para viabilizar o processo.
+
+Assim, cada upload de foto que for feito vai direto para a pasta e o django aponta o caminho.
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars14.png)
+
+Apareceu um aviso de erro aqui:
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/erro1.png)
+Precisamos ter essa biblioteca com funções e recursos para manipular imagens no python, logo o Django precisa disso. Caso tu não tenhas instalado, instale!
+
+Vamos corrigir com:
+`python -m pip install Pillow`
+
+Vamos após instalar essa biblioteca, atualizar nosso requiriments.txt com:
+`pip freeze > requirements.txt`
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/terminal2.png)
+
+Agora vamos ao disclaimer kkk
+
+Repitam comigo! A cada alteração feita em banco de dados, devemos rodar o:  
+
+`python manage.py makemigrations`
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/terminal3.png)
+
+E depois
+
+`python manage.py migrate`
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/terminal4.png)
+
 ##### 19. Armazenando imagens dos carros
+Precisamos agora fazer o upload de imagens para nosso projeto. Vamos ao nosso coração do projeto. pasta app > settings.py.
+
+Vamos adicionar nas últimas linhas do settings.py para armazenar as imagens dos carros as linhas abaixo:
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/settings2.png)
+
+Agora passaremos a armanezar as imagens em nossa aplicação Django, arquivos de mídia...precisamos dizer que a url de mídia padrão será MEDIA_URL e a URL ROOT será mídia também. Essa configuração será feita no arquivo settings.py para garantir a trabalhabilidade com imagens.
+
+Notem que também os módulo OS está sublinhado... sinalizando algo errado. Para corrigirmos isso, vamos ao topo do arquivo e adicionaremos o módulo.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/settings3.png)
+
+Podemos observar quer o sublinhado esteja correto sumirá ao importarmos o módulo.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/settings4.png)
+
+Agora vamos ao apps> urls.py para sinalizar também.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/urls3.png)
+
+E vamos importar também os módulos a seguir no início do arquivo urls.py
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/urls4.png)

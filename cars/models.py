@@ -17,7 +17,11 @@ class Car(models.Model):
     )  # marca
     factory_year = models.IntegerField(blank=True, null=True)  # ano de fabricação
     model_year = models.IntegerField(blank=True, null=True)  # ano do carro
+    plate = models.CharField(max_length=10, blank=True, null=True)  # placa do carro
     value = models.FloatField(blank=True, null=True)  # valor do carro
+    photo = models.ImageField(
+        upload_to="cars/", blank=True, null=True
+    )  # adiciona a imagem do carro
 
     def __str__(self):
         return self.model
