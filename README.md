@@ -902,3 +902,23 @@ E vamos importar também os módulos a seguir no início do arquivo urls.py
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/urls4.png)
 
 Dessa forma o upload e uso de imagens já estará configurado em nossa aplicação.
+
+Vamos novamente iniciar nosso servidor.
+
+`python manage.py runserver`
+
+Aparecerá um erro mas não se preocupe.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/erro2.png)
+
+Vamos ao nossa /admin e na parte de carros, ai entrarmos em qualquer registro haverão 2 novos campos... sendo eles a parte de Photo para fazermos um upload e a parte da placa para inserirmos. Essa atualização não somente será para todos os carros criados a partir de agora mas sim para todos os carros existentes.
+
+Vale ressaltar que ao fazer o upload da foto do carro a mesma será armazenada localmente em pasta a ser criada automaticamente quando fizermos o primeiro upload, esse upload se limita somente a uma única imagem do mesmo carro. O caminho apontado/referenciado pelo upload será o mesmo que o caminho da imagem em nosso projeto que estará na pasta /media.
+
+Vamos adicionar algumas imagens, placas e novos carros ao nosso Cars.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/opala3.png)
+
+Vamos olhar nosso Explorer do VS Code onde veremos a pasta media criada no primeiro upload.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/menu1.png)
