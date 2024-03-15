@@ -922,3 +922,7 @@ Vamos adicionar algumas imagens, placas e novos carros ao nosso Cars.
 Vamos olhar nosso Explorer do VS Code onde veremos a pasta media criada no primeiro upload.
 
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/menu1.png)
+
+E em nossa banco de dados na tabela cars ele apenas faz referencia ao caminho da imagem.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/caminho1.png)
