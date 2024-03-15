@@ -733,3 +733,55 @@ Agora sim, podemos atualizar nossa página após termos informado ao django essa
 
 Vamos entrar no Brands e adicionar as marcas.
 
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand8.png)
+
+Bora adicionar a Fiat.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand9.png)
+
+Adicionado
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand10.png)
+
+Vamos adicionar as marcas famosas!
+
+- Fiat
+- Chevrolet
+- Ford
+- Volkswagen
+- BMW
+- Porsche
+- Toyota
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/brand11.png)
+
+Percebam que novamente aquela situação chata esta rolando... "brand object (x)". Feio, não?!
+
+Ja passamos por uma situação parecida!
+
+Lembram como corrigir?!
+
+Espero que sim rs
+
+Devemos mexer em nosso models.py adicionando o dunder str a class Brand.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_brand1.png)
+
+Assim! E notem que o que eu quero que retorne é o nome da marca, diferente do modelo que usamos para a classe Car.
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_brand2.png)
+
+Pronto!
+
+Agora, vemos que ao entrarmos na marca, aparece diretamente o nome dela e não aquele feioso "brand object (x)".
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_brand3.png)
+
+Enfim, marcas cadastradas!
+Vamos cadastrar agora um carro em Cars!
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars8.png)
+
+Notem que agora temos em Brand um menu drop-down que esta diretamente ligado as marcas que cadastramos anteriormente!
+
+![Django admin Cars](./notebooks_nivelamento/imgs_markdown/models_cars9.png)

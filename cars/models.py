@@ -5,6 +5,9 @@ class Brand(models.Model):
     id = models.AutoField(primary_key=True)  # cada ID único
     name = models.CharField(max_length=200)  # nome da marca
 
+    def __str__(self):
+        return self.name
+
 
 class Car(models.Model):
     id = models.AutoField(primary_key=True)
