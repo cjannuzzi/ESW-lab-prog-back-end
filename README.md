@@ -900,3 +900,5 @@ Agora vamos ao apps> urls.py para sinalizar também.
 E vamos importar também os módulos a seguir no início do arquivo urls.py
 
 ![Django admin Cars](./notebooks_nivelamento/imgs_markdown/urls4.png)
+
+Dessa forma o upload e uso de imagens já estará configurado em nossa aplicação.
