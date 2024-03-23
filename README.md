@@ -65,6 +65,31 @@ Prof. Me. [Caio Jannuzzi](https://www.linkedin.com/in/caiojannuzzi/)
 
 ![vamos comecar](https://github.com/cjannuzzi/ESW-lab-prog-back-end/assets/95255704/dca7e2c8-018b-4f96-97cc-a81d316158c9)
 
+# O que é Django?
+- Framework Web
+- Para Python feito em Python
+- Código aberto (open source)
+- Arquitetura MVT (Model (Modelo), View (Visão) e Template (Template))
+- Full Stack
+
+## Framework Web
+Conjunto de códigos que alguém ou alguma empresa já fez e voce instala na sua máquina e com ele já vem uma série de ferramentas, bibliotecas... ferramentas prontas. 
+
+Imagem como uma caixinhas  de ferramentas, esta talvez seja a melhor analogia.
+
+Vale observar que a diferença entre uma lib (biblioteca) e um framework é colossal. 
+
+Uma lib usamos para algo específico, por exemplo... dentro da aplicação criar um PDF, gerar um PDF dentro do app. Podemos usar o pyPDF cuja única função é me dar funções prontas para a geração do PDF e só.
+
+Um framework é algo maior do ecossistema de desenvolvimento... ele dita a regra do jogo vamos dizer assim. Para criarmos um projeto utilizando o Django por exemplo, precismos serguir uma série de padrões que a ferramenta exige para possamos utilizar este framework da melhor forma.
+
+Sei que para a galera que está dando o start agora isso pode parecer confuso, mas com o andamento vai ficar tranquilo o conceito e clara essa diferença entre lib x framework.
+
+Imagem o Django agora, como um monte de códigos fonte já prontos dentro de utilitários para voces baixarem na máquina e utilizar na aplicação, beleza?
+
+## Código aberto
+Podemos baixar e explorar! 
+
 Neste README.MD que estará em constante atualização, acompanharemos o desenvolvimento de um app para gestão de carros!
 
 **Objetivo da disciplina é o aluno juntamente com seu grupo, ao final do semestre apresentar um app totalmente funcional (CRUD).**
