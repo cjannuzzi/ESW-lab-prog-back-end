@@ -60,10 +60,11 @@ Prof. Me. [Caio Jannuzzi](https://www.linkedin.com/in/caiojannuzzi/)
 
 ---
 
----
 
 
 ![vamos comecar](https://github.com/cjannuzzi/ESW-lab-prog-back-end/assets/95255704/dca7e2c8-018b-4f96-97cc-a81d316158c9)
+
+---
 
 # O que é Django?
 - Framework Web
