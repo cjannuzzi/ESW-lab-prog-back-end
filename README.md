@@ -79,7 +79,7 @@ Imagem como uma caixinhas  de ferramentas, esta talvez seja a melhor analogia.
 
 Vale observar que a diferença entre uma lib (biblioteca) e um framework é colossal. 
 
-Uma lib usamos para algo específico, por exemplo... dentro da aplicação criar um PDF, gerar um PDF dentro do app. Podemos usar o pyPDF cuja única função é me dar funções prontas para a geração do PDF e só.
+Uma lib usamos para algo específico, por exemplo... dentro da aplicação criar um PDF, gerar um PDF dentro do app. Podemos usar o  [pypdf](https://pypi.org/project/pypdf/) cuja única função é me dar funções prontas para a geração do PDF e só.
 
 Um framework é algo maior do ecossistema de desenvolvimento... ele dita a regra do jogo vamos dizer assim. Para criarmos um projeto utilizando o Django por exemplo, precismos serguir uma série de padrões que a ferramenta exige para possamos utilizar este framework da melhor forma.
 
